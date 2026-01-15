@@ -18,5 +18,8 @@
     src: url(./assets/fonts/satoshi.ttf);
  }
  body{
-   background-color: black;
+   /* background-color: black; */
+ }
+ ::-webkit-scrollbar{
+   display: none;
  }

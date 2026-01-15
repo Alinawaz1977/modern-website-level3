@@ -10,23 +10,28 @@ const Hero = () => {
     const secondRef = useRef(null)
     gsap.registerPlugin(ScrollTrigger)
     useGSAP(() => {
-        gsap.to(videoRef.current, {
-            clipPath: "circle(0%)",
+        const tl = gsap.timeline()
+        tl.to(videoRef.current, {
+            clipPath: "circle(2%)",
             scrollTrigger: {
                 trigger: videoRef.current,
                 // markers:true,
                 scrub: 2,
                 // end:"top 150%",
                 // pin:videoRef.current,
-                pin: secondRef.current
+                pin: secondRef.current,
             }
         })
-        gsap.from(secondRef.current, {
+        tl.from(secondRef.current, {
             scale: 100,
             scrollTrigger: {
                 trigger: videoRef.current,
                 // markers:true,
                 scrub: 2,
+                onUpdate:(e)=>{
+                    console.log(e.progress);
+                    
+                }
             }
         })
     })
