@@ -1,6 +1,22 @@
-@import "tailwindcss"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
 
 /* body[theme="black"]{
     background-color: black;
     color:white;
 } */
+ @font-face {
+    font-family: 'ppink';
+    src: url(./assets/fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+ }
+ @font-face {
+    font-family: 'ppneue';
+    src: url(./assets/fonts/PPNeueMachina_\ Light.ttf);
+ }
+ @font-face {
+    font-family: 'satoshi';
+    src: url(./assets/fonts/satoshi.ttf);
+ }
+ body{
+   background-color: black;
+ }
