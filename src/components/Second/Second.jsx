@@ -20,8 +20,8 @@ const Second = () => {
     return (
         <div className='h-screen w-screen flex overflow-hidden justify-center flex-col items-center text-white bg-black' >
             <div className=' overflow-hidden  font-[ppink] text-white  text-5xl md:text-[5vw] leading-17 md:leading-[4vw] gap-25 flex  flex-col items-center justify-center' >
-                <div className='pt-10 md:p-0' >
-                    <p id='' className='secondHeading text-lg md:text-2xl font-bold font-[satoshi]' >Crafting a new paradigm of</p>
+                <div id='secondHeading' className='pt-10 md:p-0' >
+                    <p className='secondHeading text-lg md:text-2xl font-bold font-[satoshi]' >Crafting a new paradigm of</p>
                     <p className='secondHeading text-lg md:text-2xl font-bold font-[satoshi]' >healthcare, one that is</p>
                 </div>
                 <div>

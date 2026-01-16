@@ -5,7 +5,7 @@ import Hero from './components/Sections/Hero'
 const App = () => {
   return (
     <div  >
-      <Hero/>
+      <Hero />
     </div>
   )
 }

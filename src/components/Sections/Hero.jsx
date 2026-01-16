@@ -20,6 +20,20 @@ const Hero = () => {
                 // end:"top 150%",
                 // pin:videoRef.current,
                 pin: secondRef.current,
+                onUpdate: (e) => {
+                    const progress = e.progress * 10
+                    if (progress > 9.5) {
+                        videoRef.current.style.display = "none"
+                        let id = document.querySelector("#secondHeading").textContent
+                        const splitedText = id.split("")
+                        gsap.from(splitedText,{
+                            scale:100
+                        }) 
+                    }
+                    else {
+                        videoRef.current.style.display = "block"
+                    }
+                }
             }
         })
         tl.from(secondRef.current, {
@@ -28,16 +42,13 @@ const Hero = () => {
                 trigger: videoRef.current,
                 // markers:true,
                 scrub: 2,
-                onUpdate:(e)=>{
-                    console.log(e.progress);
-                    
-                }
+
             }
         })
     })
     return (
         <div className='relative   ' >
-            <div ref={videoRef} className='fixed  [clip-path:circle(75%_at_50%_50%)] top-0 z-20 ' >
+            <div ref={videoRef} className='fixed [clip-path:circle(75%_at_50%_50%)] top-0 z-20 ' >
                 <Video />
             </div>
             <div ref={secondRef} className='absolute overflow-hidden top-0' >
