@@ -24,11 +24,6 @@ const Hero = () => {
                     const progress = e.progress * 10
                     if (progress > 9.5) {
                         videoRef.current.style.display = "none"
-                        let id = document.querySelector("#secondHeading").textContent
-                        const splitedText = id.split("")
-                        gsap.from(splitedText,{
-                            scale:100
-                        }) 
                     }
                     else {
                         videoRef.current.style.display = "block"
@@ -40,7 +35,6 @@ const Hero = () => {
             scale: 100,
             scrollTrigger: {
                 trigger: videoRef.current,
-                // markers:true,
                 scrub: 2,
 
             }
