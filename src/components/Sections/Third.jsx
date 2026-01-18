@@ -24,9 +24,11 @@ const Third = () => {
     //     })
     // })
     return (
-        <div id='third' ref={thirdRef} className=' flex overflow-hidden gap-30 h-screen w-screen p-10 relative' >
-            <ThirdLeft />
-            {/* <ThirdRight/> */}
+        <div id='third' ref={thirdRef} className=' flex items-start gap-30 min-h-screen w-screen p-10 relative' >
+            <div className='sticky top-10   ' >
+                <ThirdLeft />
+            </div>
+            <ThirdRight />
         </div>
     )
 }

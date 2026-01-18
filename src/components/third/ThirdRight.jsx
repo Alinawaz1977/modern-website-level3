@@ -11,43 +11,50 @@ const ThirdRight = () => {
   const boxesRef = useRef([])
 
   useGSAP(() => {
-    const tl = gsap.timeline({
+    gsap.to(containerRef.current, {
+      yPercent: -200,
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 0%",
-        end:"top 150%",
-        // end: "+=1500",   // 🔥 gives scroll space
-        scrub: 1,
-        pin: "#third",
-        markers: true,
+        start: "top 80%",
+        end: "+=200%",
+        scrub: 2,
+        invalidateOnRefresh: true,
+        onUpdate: (self) => {
+          const progress = self.progress * 10
+          boxesRef.current.forEach(box => {
+            if (progress > 0.8) {
+              box.style.backgroundColor = "black"
+              box.style.color = "white"
+              box.style.transform = "scaleX(1.05)"
+            } else {
+              box.style.backgroundColor = "white"
+              box.style.color = "black"
+              box.style.transform = "scaleX(1)"
+            }
+          })
+        }
       }
     })
 
-    boxesRef.current.forEach((box, i) => {
-      tl.to(box, {
-        top: "-25%",
-        backgroundColor: "black",
-        color: "white",
-        duration: 1,
-      })
-    })
-  })
+    // ScrollTrigger.refresh()
+  }, [])
 
   return (
-    <div ref={containerRef} className="container relative h-screen">
-      {[1,2,3,4].map((_, i) => (
-        <div
-          key={i}
-          ref={el => boxesRef.current[i] = el}
-          className="box absolute bottom-[-25%]"
-        >
-            <div className='h-fit' >
-          <Box />
-            </div>
-        </div>
-      ))}
+    <div className="relative min-h-screen ">
+      <div ref={containerRef} className="boxContainer mt-[50vh]">
+        {[1, 2, 3, 4].map((_, i) => (
+          <div
+            key={i}
+            ref={el => boxesRef.current[i] = el}
+            className="box mt-5 duration-300"
+          >
+            <Box />
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
+
 
 export default ThirdRight
