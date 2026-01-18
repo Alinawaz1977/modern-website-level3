@@ -11,7 +11,7 @@ const Second = () => {
             duration:2,
             scrollTrigger: {
                 trigger: ".secondHeading",
-                markers:true,
+                // markers:true,
                 start:"top 50%",
                 scrub: 2,
             }

@@ -6,8 +6,13 @@ import Third from './components/Sections/Third'
 const App = () => {
   return (
     <div  >
-      {/* <Hero /> */}
+      <div className='h-[200vh]' >
+      <Hero />
+      </div>
+      <div>
+
       <Third/>
+      </div>
     </div>
   )
 }
