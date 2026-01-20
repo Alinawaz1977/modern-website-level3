@@ -5,12 +5,20 @@ import Part3 from '../fourth/Part3'
 import Part4 from '../fourth/Part4'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
 
 const Fourth = () => {
+    gsap.registerPlugin(ScrollTrigger)
     const fourContainer = useRef(null)
-    useGSAP(()=>{
-        gsap.to(fourContainer.current,{
-            x:"-303.65%"
+    useGSAP(() => {
+        gsap.to(fourContainer.current, {
+            x: "-300%",
+            scrollTrigger: {
+                trigger: fourContainer.current,
+                // markers: true,
+                scrub: 2,
+                pin: fourContainer.current
+            }
         })
     })
     return (

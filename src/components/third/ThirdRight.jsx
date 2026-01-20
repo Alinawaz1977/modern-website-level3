@@ -9,35 +9,49 @@ gsap.registerPlugin(ScrollTrigger)
 const ThirdRight = () => {
   const containerRef = useRef(null)
   const boxesRef = useRef([])
-
+  
   useGSAP(() => {
-    gsap.to(containerRef.current, {
-      yPercent: -200,
-      scrollTrigger: {
-        trigger: containerRef.current,
-        start: "top 80%",
-        end: "+=200%",
-        scrub: 2,
-        invalidateOnRefresh: true,
-        onUpdate: (self) => {
-          const progress = self.progress * 10
-          boxesRef.current.forEach(box => {
-            if (progress > 0.8) {
-              box.style.backgroundColor = "black"
-              box.style.color = "white"
-              box.style.transform = "scaleX(1.05)"
-            } else {
-              box.style.backgroundColor = "white"
-              box.style.color = "black"
-              box.style.transform = "scaleX(1)"
-            }
-          })
-        }
-      }
-    })
+    // gsap.to(containerRef.current, {
+    //   yPercent: -200,
+    //   scrollTrigger: {
+    //     trigger: containerRef.current,
+    //     start: "top 80%",
+    //     end: "+=200%",
+    //     scrub: 2,
+    //     invalidateOnRefresh: true,
+    //     onUpdate: (self) => {
+    //       const progress = self.progress * 10
+    //       boxesRef.current.forEach(box => {
+    //         if (progress > 0.8) {
+    //           box.style.backgroundColor = "black"
+    //           box.style.color = "white"
+    //           box.style.transform = "scaleX(1.07)"
+    //         } else {
+    //           box.style.backgroundColor = "white"
+    //           box.style.color = "black"
+    //           box.style.transform = "scaleX(1)"
+    //         }
+    //       })
+    //     }
+    //   }
+    // })
 
     // ScrollTrigger.refresh()
-  }, [])
+    boxesRef.current.forEach((box, i) => {
+      gsap.to(box, {
+        backgroundColor: "black",
+        color: "white",
+        scaleX: 1.05,
+        scrollTrigger: {
+          trigger: box,
+          start: "top center",
+          end: "top 40%",
+          scrub: true,
+          markers: true,
+        }
+      })
+    })
+  })
 
   return (
     <div className="relative min-h-screen ">

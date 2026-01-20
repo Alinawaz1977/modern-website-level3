@@ -5,18 +5,18 @@ import React from 'react'
 
 const Second = () => {
     gsap.registerPlugin(ScrollTrigger)
-    useGSAP(() => {
-        gsap.from(".secondHeading", {
-            opacity:0,
-            duration:2,
-            scrollTrigger: {
-                trigger: ".secondHeading",
-                // markers:true,
-                start:"top 50%",
-                scrub: 2,
-            }
-        })
-    })
+    // useGSAP(() => {
+    //     gsap.from(".secondHeading", {
+    //         // opacity:0,
+    //         duration:2,
+    //         scrollTrigger: {
+    //             trigger: ".secondHeading",
+    //             // markers:true,
+    //             start:"top 20%",
+    //             scrub: 2,
+    //         }
+    //     })
+    // })
     return (
         <div className='h-screen w-screen flex overflow-hidden justify-center flex-col items-center text-white bg-black' >
             <div className=' overflow-hidden  font-[ppink] text-white  text-5xl md:text-[5vw] leading-17 md:leading-[4vw] gap-25 flex  flex-col items-center justify-center' >
@@ -147,7 +147,7 @@ const Second = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-base  w-40 pt-10' >et nihil labore, odio eum ratione amet velit ipsa?</div>
+            <div className='text-base  w-40 pt-10 ' >et nihil labore, odio eum ratione amet velit ipsa?</div>
         </div>
     )
 }

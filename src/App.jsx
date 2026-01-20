@@ -6,17 +6,23 @@ import Part1 from './components/fourth/Part1'
 import Part2 from './components/fourth/Part2'
 import Part3 from './components/fourth/Part3'
 import Fourth from './components/Sections/Fourth'
+import Fifth from './components/Sections/Fifth'
+import Six from './components/Sections/Six'
+import Footer from './components/Sections/Footer'
 
 const App = () => {
   return (
     <div className='relative' >
-      {/* <div className='h-[200vh]' >
+      <div className='h-[200vh]' >
       <Hero />
       </div>
       <div className='' >
       <Third/>
-      </div> */}
+      </div>
       <Fourth/>
+      <Fifth/> 
+       <Six/>
+      <Footer/>
     </div>
   )
 }

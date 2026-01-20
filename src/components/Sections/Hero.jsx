@@ -36,12 +36,12 @@ const Hero = () => {
             scrollTrigger: {
                 trigger: videoRef.current,
                 scrub: 2,
-
+                
             }
         })
     })
     return (
-        <div className='relative   h-auto' >
+        <div className='relative h-auto' >
             <div ref={videoRef} className='fixed [clip-path:circle(75%_at_50%_50%)] top-0 z-20 ' >
                 <Video />
             </div>
