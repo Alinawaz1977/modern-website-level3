@@ -16,8 +16,16 @@ const Fourth = () => {
             scrollTrigger: {
                 trigger: fourContainer.current,
                 // markers: true,
-                scrub: 2,
-                pin: fourContainer.current
+                scrub: 1,
+                pin: fourContainer.current,
+                onEnter:()=>{
+                    document.body.classList.add("theme-purple")
+                },
+                onLeave:()=>{
+                    document.body.classList.remove("theme-purple")
+                    document.body.classList.remove("theme-blue")
+                    document.body.classList.add("theme-light")
+                }
             }
         })
     })

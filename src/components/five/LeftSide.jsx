@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
+import assets from '../../assets/images/assets'
 
 const LeftSide = () => {
     const leftRef = useRef(null)
@@ -10,14 +11,14 @@ const LeftSide = () => {
     useGSAP(() => {
         let firstWord = document.querySelectorAll(".firstWord")
         console.log(firstWord);
-        gsap.to(firstWord, {
-            color: "red",
+        gsap.from(firstWord, {
+            color: "gray",
             // duration:5,
             stagger:0.007,
             scrollTrigger:{
                 trigger:leftRef.current,
                 // markers:true,
-                start:"top 80%",
+                start:"top 70%",
                 end:"top -20%",
                 scrub:2
             }
@@ -31,13 +32,13 @@ const LeftSide = () => {
                 <p  >
                     {
                         fisrtParagraphText.split("").map((item, index) => (
-                            <span className='firstWord' >{item}</span>
+                            <span className='firstWord text-[#3c58ef]' >{item}</span>
                         ))
                     }
                 </p>
             </div>
-            <div className='flex flex-col w-1/3 mt-10 items-center' >
-                <img className='w-20 h-20 rounded-full bg-amber-400' src="" alt="" />
+            <div className='flex flex-col w-full pb-5 md:w-1/3 mt-10 justify-center md:justify-normal items-center' >
+                <img className='w-20 h-20 rounded-full ' src={assets.profile1} alt="" />
                 <h3 className='font-bold uppercase mt-5 ' >ali nawaz</h3>
                 <h3 className=' text-gray-700  mt-5' >Product Manager @health360</h3>
             </div>

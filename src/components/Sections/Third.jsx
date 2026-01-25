@@ -10,21 +10,8 @@ const Third = () => {
     const thirdRef = useRef(null)
     const thirdRight = useRef(null)
     gsap.registerPlugin(ScrollTrigger)
-    // useGSAP(() => {
-    //     gsap.to(".box", {
-    //         top: -200,
-    //         stagger:.4,
-    //         scrollTrigger: {
-    //             markers: true,
-    //             trigger: thirdRef.current,
-    //             pin: thirdRef.current,
-    //             scrub:2,
-    //             // start:"top 100%"
-    //         }
-    //     })
-    // })
     return (
-        <div id='third' ref={thirdRef} className=' flex items-start gap-30 min-h-screen w-screen p-10 relative' >
+        <div id='third' ref={thirdRef} className='md:flex-row flex-col flex items-start gap-30 min-h-screen w-screen p-10 relative' >
             <div className='sticky top-10   ' >
                 <ThirdLeft />
             </div>

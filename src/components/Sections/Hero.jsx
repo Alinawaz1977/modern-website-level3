@@ -4,6 +4,7 @@ import Second from '../Second/Second'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
+import Navbar from '../Navbar/Navbar'
 
 const Hero = () => {
     const videoRef = useRef(null)
@@ -36,9 +37,12 @@ const Hero = () => {
             scrollTrigger: {
                 trigger: videoRef.current,
                 scrub: 2,
-                
+                onEnter:()=>{
+                    document.body.classList.add("theme-dark")
+                },
             }
         })
+        
     })
     return (
         <div className='relative h-auto' >
@@ -47,6 +51,9 @@ const Hero = () => {
             </div>
             <div ref={secondRef} className='absolute overflow-hidden top-0' >
                 <Second />
+            </div>
+            <div className='absolute z-30 w-full top-0' >
+                <Navbar />
             </div>
         </div>
     )

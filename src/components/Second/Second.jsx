@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React from 'react'
+import assets from '../../assets/images/assets'
 
 const Second = () => {
     gsap.registerPlugin(ScrollTrigger)
@@ -18,8 +19,9 @@ const Second = () => {
     //     })
     // })
     return (
-        <div className='h-screen w-screen flex overflow-hidden justify-center flex-col items-center text-white bg-black' >
-            <div className=' overflow-hidden  font-[ppink] text-white  text-5xl md:text-[5vw] leading-17 md:leading-[4vw] gap-25 flex  flex-col items-center justify-center' >
+        <div 
+        className='h-screen w-screen flex overflow-hidden justify-center flex-col items-center' >
+            <div className=' overflow-hidden  font-[ppink]   text-5xl md:text-[5vw] leading-17 md:leading-[4vw] gap-25 flex  flex-col items-center justify-center' >
                 <div id='secondHeading' className='pt-10 md:p-0' >
                     <p className='secondHeading text-lg md:text-2xl font-bold font-[satoshi]' >Crafting a new paradigm of</p>
                     <p className='secondHeading text-lg md:text-2xl font-bold font-[satoshi]' >healthcare, one that is</p>
@@ -28,121 +30,177 @@ const Second = () => {
                     <div className='flex items-center gap-5  ' >
                         <div className='flex items-center gap-5'>
                             <p className=''> inclusive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg02} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg03} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg04} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg05} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                    </div>
-                    <div className='flex items-center gap-5 transform -translate-x-[10vw]' >
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
-                        </div>
-                        <div className='flex items-center gap-5'>
-                            <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg06} className='rounded-full' alt="" />
+                            </div>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5' >
+                    <div className='flex items-center gap-5 transform -translate-x-[25vw] md:-translate-x-[10vw]' >
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg07} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg08} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg09} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg10} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                     </div>
                     <div className='flex items-center gap-5' >
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex items-center gap-5' >
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
+                        </div>
+                        <div className='flex items-center gap-5'>
+                            <p className='     ' > intuitive</p>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > thoughtful</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
-                            <div className='w-7 h-7 rounded-full bg-amber-300' ></div>
+                            <div className='w-7 h-7 rounded-full bg-amber-300' >
+                                <img src={assets.horizontalImg01} className='rounded-full' alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Box = ({heading,description}) => {
   return (
-    <div className='w-110 flex gap-20  border items-center p-7 h-fit' >
+    <div className='w-70 h-100 md:w-110 flex flex-col md:flex-row justify-center gap-20  border items-center p-7 md:h-fit' >
         <div>
       <h3 className='text-lg  font-medium' >Driven by purpose</h3>
       <p className='text-[13px] mt-4  font-[satoshi] ' >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt modi o blanditiis, enim unde odit voluptatum!</p>

@@ -24,7 +24,7 @@ const ThirdLeft = () => {
       scrollTrigger: {
         trigger: thirdParagraph.current,
         // markers:true,
-        start: 'top 90%'
+        start: 'top 90%',
       }
     })
     gsap.from(spans1, {
@@ -39,8 +39,6 @@ const ThirdLeft = () => {
         // markers: true,
         // scrub:2
       }
-
-
     },)
     gsap.from(spans2, {
       y: 50,
@@ -65,10 +63,14 @@ const ThirdLeft = () => {
         trigger: firstHeadingRef.current,
         start: 'top 60%',
         // markers: true,
+        onEnter:()=>{
+          document.body.classList.remove("theme-dark")
+          document.body.classList.add("theme-blue")
+        }
         // scrub:2
       }
-
     })
+    
 
   })
 
@@ -78,14 +80,13 @@ const ThirdLeft = () => {
 
   return (
     <div className='ppneue' >
-      <p ref={thirdParagraph} className='w-120 font-[satoshi] ' >Significo is a leading health software creator founded on the belief
+      <p ref={thirdParagraph} className='w-80 md:w-120 font-[satoshi] ' >Significo is a leading health software creator founded on the belief
         that technology can transform healthcare to put people first.
         Whether they are employees, members, customers, or clients, we
         never forget the real people we’re designing for.
-
       </p>
       <div className='mt-5 font-[ppneue]'>
-        <p ref={firstHeadingRef} className='text-[4vw] first leading-[4.5vw] text-black' >
+        <p ref={firstHeadingRef} className='text-[10vw] leading-[10vw] md:text-[4vw] first md:leading-[4.5vw] text-black' >
           {text1.split("").map((item, index) => (
 
             <span className='inline-block' key={index} >
@@ -95,7 +96,7 @@ const ThirdLeft = () => {
             </span>
           ))}
         </p>
-        <p ref={secondHeadingRef} className='text-[4vw] first leading-[4.5vw] text-black' >
+        <p ref={secondHeadingRef} className='text-[10vw] md:text-[4vw] leading-[10vw] first md:leading-[4.5vw] text-black' >
           {text2.split("").map((item, index) => (
 
             <span className='inline-block' key={index} >
@@ -105,7 +106,7 @@ const ThirdLeft = () => {
             </span>
           ))}
         </p>
-        <p ref={thirdHeadingRef} className='text-[4vw] first leading-[4.5vw] text-black' >
+        <p ref={thirdHeadingRef} className='text-[10vw] md:text-[4vw] leading-[10vw] first md:leading-[4.5vw] text-black' >
           {text3.split("").map((item, index) => (
 
             <span className='inline-block' key={index} >

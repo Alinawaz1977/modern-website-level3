@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 const ThirdRight = () => {
   const containerRef = useRef(null)
   const boxesRef = useRef([])
-  
+
   useGSAP(() => {
     // gsap.to(containerRef.current, {
     //   yPercent: -200,
@@ -45,9 +45,9 @@ const ThirdRight = () => {
         scrollTrigger: {
           trigger: box,
           start: "top center",
-          end: "top 40%",
+          end: "top 50%",
           scrub: true,
-          markers: true,
+          // markers: true,
         }
       })
     })

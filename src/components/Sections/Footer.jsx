@@ -6,19 +6,21 @@ import FootFooter from '../footer/FootFooter'
 
 const Footer = () => {
   return (
-    <div className='w-screen footer font-[satoshi] h-[95vh] 2  2xl:h-[75vh] overflow-hidden relative text-white px-10 pt-19 mt-20 bg-black' >
+    <div className='w-screen footer font-[satoshi] h-[75vh]  overflow-hidden relative text-white px-10 pt-19 mt-20 bg-black' >
       <div className='flex justify-between items-center' >
         <div className='font-[ppneue] text-xl' >
-      <Links/>
+          <Links />
         </div>
-      <NewsLetter/>
-      <Links/>
+        <div className='hidden md:block' >
+          <NewsLetter />
+        </div>
+        <Links />
       </div>
-      <div className='2xl:pt-10 ' >
-      <Text/>
+      <div className='pt-13 md:pt-[5vw] ' >
+        <Text />
       </div>
       <div className='absolute bottom-0  w-[90vw]' >
-      <FootFooter/>
+        <FootFooter />
       </div>
     </div>
   )
