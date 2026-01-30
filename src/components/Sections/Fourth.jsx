@@ -35,7 +35,7 @@ const Fourth = () => {
     })
     return (
         <div className='' >
-            <div className='flex flex-row overflow-hidden' ref={fourContainer} >
+            <div className='flex flex-row ' ref={fourContainer} >
                 <div className='shrink-0' >
                     <Part1 />
                 </div>
