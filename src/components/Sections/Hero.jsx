@@ -37,12 +37,16 @@ const Hero = () => {
             scrollTrigger: {
                 trigger: videoRef.current,
                 scrub: 2,
-                onEnter:()=>{
+                onEnter: () => {
                     document.body.classList.add("theme-dark")
                 },
+                onEnterBack: () => {
+                    document.body.classList.add("theme-dark")
+                    document.body.classList.remove("theme-blue")
+                }
             }
         })
-        
+
     })
     return (
         <div className='relative h-auto' >

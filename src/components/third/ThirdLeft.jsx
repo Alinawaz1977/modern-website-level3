@@ -63,14 +63,17 @@ const ThirdLeft = () => {
         trigger: firstHeadingRef.current,
         start: 'top 60%',
         // markers: true,
-        onEnter:()=>{
+        onEnter: () => {
           document.body.classList.remove("theme-dark")
           document.body.classList.add("theme-blue")
-        }
+        },
+        onEnterBack: () => {
+          document.body.classList.add("theme-blue")
+                    document.body.classList.remove("theme-purple")
+                  }
         // scrub:2
       }
     })
-    
 
   })
 

@@ -20,7 +20,8 @@ const LeftSide = () => {
                 // markers:true,
                 start:"top 70%",
                 end:"top -20%",
-                scrub:2
+                scrub:2,
+                
             }
         })
         // gsap.from("")

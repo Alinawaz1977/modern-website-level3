@@ -19,12 +19,16 @@ const Fourth = () => {
                 scrub: 1,
                 pin: fourContainer.current,
                 onEnter:()=>{
+                     document.body.classList.remove("theme-blue")
                     document.body.classList.add("theme-purple")
                 },
                 onLeave:()=>{
                     document.body.classList.remove("theme-purple")
-                    document.body.classList.remove("theme-blue")
                     document.body.classList.add("theme-light")
+                },
+                onEnterBack:()=>{
+                    document.body.classList.add("theme-purple")
+                    document.body.classList.remove("theme-light")
                 }
             }
         })

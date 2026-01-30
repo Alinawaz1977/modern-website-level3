@@ -16,7 +16,7 @@ const Text = () => {
       stagger:0.1,
       scrollTrigger:{
         trigger:".footer",
-        markers:true,
+        // markers:true,
         scrub:2,
         end:"top 60%",
         start:"top 30%"
