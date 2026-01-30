@@ -11,11 +11,13 @@ const Third = () => {
     const thirdRight = useRef(null)
     gsap.registerPlugin(ScrollTrigger)
     return (
-        <div id='third' ref={thirdRef} className='md:flex-row flex-col flex items-start gap-30 min-h-screen w-screen p-10 relative' >
-            <div className='sticky top-10   ' >
+        <div id='third' ref={thirdRef} className='md:flex-row flex-col  flex items-start gap-30 min-h-[200vh] w-screen p-10 relative' >
+            <div className='sticky top-10 ' >
                 <ThirdLeft />
             </div>
-            <ThirdRight />
+            <div className='' >
+                <ThirdRight />
+            </div>
         </div>
     )
 }

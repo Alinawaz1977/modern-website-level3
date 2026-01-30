@@ -22,7 +22,7 @@ const App = () => {
     // console.log(e);
   });
   return (
-    <div className='relative overflow-x-hidden ' >
+    <div className='relative overflow-x-hidden' >
       <div className='h-[200vh]' >
       <Hero />
       </div>
