@@ -5,26 +5,30 @@
     background-color: black;
     color:white;
 } */
- @font-face {
-    font-family: 'ppink';
-    src: url(./assets/fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
- }
- @font-face {
-    font-family: 'ppneue';
-    src: url(./assets/fonts/PPNeueMachina_\ Light.ttf);
- }
- @font-face {
-    font-family: 'satoshi';
-    src: url(./assets/fonts/satoshi.ttf);
- }
- body{
-   /* background-color: black; */
- }
- ::-webkit-scrollbar{
-   display: none;
- }
+@font-face {
+  font-family: 'ppink';
+  src: url(./assets/fonts/PP\ Neue\ Machina\ Inktrap\ Medium.ttf);
+}
 
- body {
+@font-face {
+  font-family: 'ppneue';
+  src: url(./assets/fonts/PPNeueMachina_\ Light.ttf);
+}
+
+@font-face {
+  font-family: 'satoshi';
+  src: url(./assets/fonts/satoshi.ttf);
+}
+
+body {
+  /* background-color: black; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
   transition: background-color 0.6s ease, color 0.6s ease;
 }
 
@@ -37,10 +41,12 @@ body.theme-light {
   background-color: #fff;
   color: #000;
 }
+
 body.theme-blue {
   background-color: #aedee0;
   color: black;
 }
+
 body.theme-purple {
   background-color: #ef9d71;
   color: white;
