@@ -44,8 +44,8 @@ const Part2 = () => {
             <p className='w-60 absolute top-[10vw] left-[16vw] font-[satoshi] font-bold' >
                 We’re on a mission to impact as many lives as possible and build a better company while we do it. Here’s our progress.</p>
             <div className='font-[ppneue] h-full flex flex-col justify-center items-center text-[8.5vw]' >
-                <p className='text-white' >{count}.{secondNo}M</p>
-                <div className='flex flex-col text-[3vw] font-bold' >
+                <p className='' >{count}.{secondNo}M</p>
+                <div className='flex flex-col text-[3vw] text-black font-bold' >
                     <p>Real people — real lives — we have</p>
                     <p>built products and solutions for.</p>
                 </div>

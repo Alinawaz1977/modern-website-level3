@@ -37,7 +37,7 @@ const Part1 = () => {
 
 
     return (
-        <div ref={part1ref} className='font-[ppneue] relative h-screen w-screen ' >
+        <div ref={part1ref} className='font-[ppneue] text-black relative h-screen w-screen ' >
             <div className='flex-col items-center flex justify-center h-full ' >
                 <div className=' text-[6vw]  ' >
                     {

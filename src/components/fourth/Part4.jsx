@@ -5,7 +5,7 @@ const Part4 = () => {
     return (
         <div className='h-screen w-screen flex justify-center font-[ppneue] relative items-center ' >
             <div className='flex flex-col' >
-                <p className='text-[10vw] text-center leading-[10vw] uppercase text-white' >13</p>
+                <p className='text-[10vw] text-center leading-[10vw] uppercase ' >13</p>
                 <p className='text-[3vw] w-180 text-center font-medium leading-[3vw] text-black ' >Nationalities Represented on Our Team.
                 </p>
             </div>
