@@ -71,7 +71,7 @@ const Second = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex items-center gap-5 transform -translate-x-[24vw] md:-translate-x-[10vw]' >
+                    <div className='flex items-center gap-5 transform -translate-x-[26vw] md:-translate-x-[10vw]' >
                         <div className='flex items-center gap-5'>
                             <p className='     ' > intuitive</p>
                             <div className='w-7 h-7 rounded-full bg-amber-300' >
