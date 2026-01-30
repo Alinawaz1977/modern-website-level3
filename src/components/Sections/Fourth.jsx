@@ -16,17 +16,17 @@ const Fourth = () => {
             scrollTrigger: {
                 trigger: fourContainer.current,
                 // markers: true,
-                scrub: 1,
+                scrub: 0.2,
                 pin: fourContainer.current,
-                onEnter:()=>{
-                     document.body.classList.remove("theme-blue")
+                onEnter: () => {
+                    document.body.classList.remove("theme-blue")
                     document.body.classList.add("theme-purple")
                 },
-                onLeave:()=>{
+                onLeave: () => {
                     document.body.classList.remove("theme-purple")
                     document.body.classList.add("theme-light")
                 },
-                onEnterBack:()=>{
+                onEnterBack: () => {
                     document.body.classList.add("theme-purple")
                     document.body.classList.remove("theme-light")
                 }

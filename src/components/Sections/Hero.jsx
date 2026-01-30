@@ -17,7 +17,7 @@ const Hero = () => {
             scrollTrigger: {
                 trigger: videoRef.current,
                 // markers:true,
-                scrub: 2,
+                scrub: 0.3,
                 // end:"top 150%",
                 // pin:videoRef.current,
                 pin: secondRef.current,
@@ -36,7 +36,7 @@ const Hero = () => {
             scale: 100,
             scrollTrigger: {
                 trigger: videoRef.current,
-                scrub: 2,
+                scrub: 0.3,
                 onEnter: () => {
                     document.body.classList.add("theme-dark")
                 },
